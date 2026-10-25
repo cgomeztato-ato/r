@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body><p id="m">Redirigiendo…</p>
+<script>
+const destinos={
+"001":"",
+"002":""
+};
+const u=destinos[new URLSearchParams(location.search).get("c")];
+if(u){location.replace(u)}else{document.getElementById("m").textContent="Este código aún no está activo."}
+</script></body></html>
