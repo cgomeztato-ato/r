@@ -5,7 +5,8 @@
 <script>
 const destinos={
 "001":"https://search.google.com/local/writereview?placeid=ChIJAR9NLTupXZQR4V5qbPmmMGU",
-"002":""
+"002":"https://search.google.com/local/writereview?placeid=ChIJeXB5OwCpXZQRZCw1ssy5qSo",
+"003"
 };
 const u=destinos[new URLSearchParams(location.search).get("c")];
 if(u){location.replace(u)}else{document.getElementById("m").textContent="Este código aún no está activo."}
